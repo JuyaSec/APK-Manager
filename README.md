@@ -6,7 +6,7 @@ There is a tool that can do the process of compiling and decompiling and also si
 ```bash
 #!/bin/bash
 #------------
-SIGN(){
+MAIN(){
     clear 
     echo $'\e[31m=============================\e[0m'
     echo -e $'\e[31m\tAPK-MANAGER\e[0m'
@@ -56,4 +56,4 @@ APKSIGN(){
     apksigner sign --ks $key --ks-pass pass:password --ks-key-alias alias1 $apk
     echo -e $'\e[32mSCUSSFULY\e[0m'
 }
-SIGN
+MAIN
